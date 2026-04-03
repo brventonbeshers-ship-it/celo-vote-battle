@@ -15,3 +15,5 @@ export function useMiniPay() {
 
   return isMiniPay;
 }
+
+// minipay: 1775237933696
