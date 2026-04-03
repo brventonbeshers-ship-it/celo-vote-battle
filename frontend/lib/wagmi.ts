@@ -7,3 +7,5 @@ export const config = getDefaultConfig({
   chains: [celo],
   ssr: true,
 });
+
+// wagmi-cfg: 1775237618667
