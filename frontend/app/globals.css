@@ -20,3 +20,5 @@ body {
   @apply bg-gradient-to-r from-secondary to-yellow-500 text-black font-semibold py-3 px-6 rounded-xl
          hover:shadow-glow transition-all duration-300 hover:scale-105 active:scale-95;
 }
+
+/* colors: 1775237405120 */
