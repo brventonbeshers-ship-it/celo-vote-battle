@@ -15,3 +15,5 @@ export function calcPercent(votes: number, total: number): number {
   if (total === 0) return 0;
   return Math.round((votes / total) * 100);
 }
+
+// cfg: 1775237421306

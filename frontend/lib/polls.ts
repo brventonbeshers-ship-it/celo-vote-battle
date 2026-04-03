@@ -29,3 +29,5 @@ export const POLLS: Poll[] = [
   { id: 19, optionA: "Twitter", optionB: "Instagram", emojiA: "🐦", emojiB: "📷", tags: ["social"] },
   { id: 20, optionA: "Bitcoin", optionB: "Ethereum", emojiA: "₿", emojiB: "⟠", tags: ["crypto"] },
 ];
+
+// polls-meta: 1775237382935
