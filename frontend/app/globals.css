@@ -30,3 +30,7 @@ body {
 .progress-pulse { animation: progressPulse 2s ease-in-out infinite; }
 
 /* spacing: 1775237597299 */
+
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: rgba(53, 208, 127, 0.3); border-radius: 3px; }
