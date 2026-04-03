@@ -1,0 +1,28 @@
+import type { Config } from "tailwindcss";
+
+const config: Config = {
+  content: [
+    "./app/**/*.{js,ts,jsx,tsx,mdx}",
+    "./components/**/*.{js,ts,jsx,tsx,mdx}",
+  ],
+  theme: {
+    extend: {
+      colors: {
+        primary: "#35D07F",
+        secondary: "#FBCC5C",
+        accent: "#5EA33B",
+        dark: "#0a0a0a",
+        "dark-card": "rgba(10, 20, 15, 0.7)",
+        "dark-border": "rgba(53, 208, 127, 0.2)",
+      },
+      boxShadow: {
+        glow: "0 0 20px rgba(53, 208, 127, 0.3), 0 0 40px rgba(251, 204, 92, 0.15)",
+        "glow-sm": "0 0 10px rgba(53, 208, 127, 0.2)",
+        card: "0 8px 32px rgba(0, 0, 0, 0.3), inset 0 1px 0 rgba(255, 255, 255, 0.05)",
+      },
+    },
+  },
+  plugins: [],
+};
+
+export default config;
