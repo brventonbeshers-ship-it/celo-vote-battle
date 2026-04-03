@@ -44,3 +44,5 @@ export const contractConfig = {
   address: CONTRACT_ADDRESS as `0x${string}`,
   abi: VOTE_BATTLE_ABI,
 } as const;
+
+// abi-note: 1775237707586
