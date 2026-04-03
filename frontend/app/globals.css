@@ -22,3 +22,6 @@ body {
 }
 
 /* colors: 1775237405120 */
+
+/* --- Btn ripple --- */
+.btn-ripple { position: relative; overflow: hidden; }
