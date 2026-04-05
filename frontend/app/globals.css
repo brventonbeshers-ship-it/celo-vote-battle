@@ -138,3 +138,8 @@ html { scroll-behavior: smooth; }
 ::-webkit-scrollbar-thumb { background: rgba(53, 208, 127, 0.3); border-radius: 3px; }
 
 /* colors: 1775389578508 */
+
+/* spacing: 1775389618452 */
+
+/* --- Card hover glow --- */
+.glass-card:hover { border-color: rgba(53, 208, 127, 0.35); }
