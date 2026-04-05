@@ -103,3 +103,6 @@ html { scroll-behavior: smooth; }
 /* spacing: 1775283211365 */
 
 /* timing: 1775283436259 */
+
+/* --- Selection --- */
+::selection { background: rgba(53, 208, 127, 0.25); color: #fff; }
