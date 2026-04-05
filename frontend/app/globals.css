@@ -116,3 +116,16 @@ html { scroll-behavior: smooth; }
 /* spacing: 1775383231843 */
 
 /* colors: 1775383247223 */
+
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: rgba(53, 208, 127, 0.3); border-radius: 3px; }
+
+/* timing: 1775383310509 */
+
+/* --- Focus ring --- */
+*:focus-visible {
+  outline: 2px solid rgba(53, 208, 127, 0.6);
+  outline-offset: 2px;
+  border-radius: 6px;
+}
