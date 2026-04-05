@@ -140,3 +140,6 @@ html { scroll-behavior: smooth; }
 /* colors: 1775389578508 */
 
 /* spacing: 1775389618452 */
+
+/* --- Card hover glow --- */
+.glass-card:hover { border-color: rgba(53, 208, 127, 0.35); }
