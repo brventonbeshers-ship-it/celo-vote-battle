@@ -209,3 +209,6 @@ html { scroll-behavior: smooth; }
 }
 
 /* spacing: 1775598142466 */
+
+/* --- Btn ripple --- */
+.btn-ripple { position: relative; overflow: hidden; }
