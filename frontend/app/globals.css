@@ -302,3 +302,6 @@ html { scroll-behavior: smooth; }
 }
 
 /* colors: 1775710180189 */
+
+/* --- Selection --- */
+::selection { background: rgba(53, 208, 127, 0.25); color: #fff; }
