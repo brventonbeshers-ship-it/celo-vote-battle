@@ -62,3 +62,5 @@ export const contractConfig = {
 // abi-note: 1775598292280
 
 // abi-note: 1775642958822
+
+// abi-note: 1775695240432
