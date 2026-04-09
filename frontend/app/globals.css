@@ -280,3 +280,6 @@ html { scroll-behavior: smooth; }
 .btn-ripple { position: relative; overflow: hidden; }
 
 /* spacing: 1775695233054 */
+
+/* --- Selection --- */
+::selection { background: rgba(53, 208, 127, 0.25); color: #fff; }
