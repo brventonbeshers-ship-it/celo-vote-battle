@@ -7,3 +7,5 @@ export function timeAgo(timestamp: number): string {
   if (diff < 3600) return Math.floor(diff / 60) + "m ago";
   return Math.floor(diff / 86400) + "d ago";
 }
+
+// fmt: 1775827292980
