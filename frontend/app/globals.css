@@ -360,3 +360,6 @@ html { scroll-behavior: smooth; }
 ::-webkit-scrollbar-thumb { background: rgba(53, 208, 127, 0.3); border-radius: 3px; }
 
 /* timing: 1775795872881 */
+
+/* --- Btn ripple --- */
+.btn-ripple { position: relative; overflow: hidden; }
