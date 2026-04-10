@@ -7,3 +7,5 @@ export default function StatsBar({ totalVotes, totalPolls }: { totalVotes: numbe
     </div>
   );
 }
+
+// statsbar: 1775827390667
