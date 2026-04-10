@@ -370,3 +370,6 @@ html { scroll-behavior: smooth; }
 /* transition: 1775827245570 */
 
 /* zindex: 1775827254152 */
+
+/* --- Btn ripple --- */
+.btn-ripple { position: relative; overflow: hidden; }
