@@ -450,3 +450,10 @@ html { scroll-behavior: smooth; }
 
 /* --- Selection --- */
 ::selection { background: rgba(53, 208, 127, 0.25); color: #fff; }
+
+/* colors: 1775919284062 */
+
+/* --- Btn ripple --- */
+.btn-ripple { position: relative; overflow: hidden; }
+
+/* zindex: 1775919293583 */
