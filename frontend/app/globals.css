@@ -479,3 +479,7 @@ html { scroll-behavior: smooth; }
 }
 
 /* font: 1775919506218 */
+
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: rgba(53, 208, 127, 0.3); border-radius: 3px; }
