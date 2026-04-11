@@ -403,3 +403,16 @@ html { scroll-behavior: smooth; }
 ::-webkit-scrollbar-thumb { background: rgba(53, 208, 127, 0.3); border-radius: 3px; }
 
 /* opacity: 1775827549445 */
+
+/* border: 1775870439164 */
+
+/* --- Card hover glow --- */
+.glass-card:hover { border-color: rgba(53, 208, 127, 0.35); }
+
+/* timing: 1775870449680 */
+
+/* transition: 1775870452877 */
+
+/* font: 1775870461224 */
+
+/* radius: 1775870469594 */
