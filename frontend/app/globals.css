@@ -511,3 +511,10 @@ html { scroll-behavior: smooth; }
 /* spacing: 1775965741162 */
 
 /* radius: 1775965744339 */
+
+/* timing: 1775965800119 */
+
+/* --- Card hover glow --- */
+.glass-card:hover { border-color: rgba(53, 208, 127, 0.35); }
+
+/* opacity: 1775965825391 */
