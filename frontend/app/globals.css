@@ -493,3 +493,21 @@ html { scroll-behavior: smooth; }
 ::-webkit-scrollbar { width: 6px; }
 ::-webkit-scrollbar-track { background: transparent; }
 ::-webkit-scrollbar-thumb { background: rgba(53, 208, 127, 0.3); border-radius: 3px; }
+
+/* colors: 1775965719063 */
+
+/* --- Focus ring --- */
+*:focus-visible {
+  outline: 2px solid rgba(53, 208, 127, 0.6);
+  outline-offset: 2px;
+  border-radius: 6px;
+}
+
+/* --- Btn ripple --- */
+.btn-ripple { position: relative; overflow: hidden; }
+
+/* zindex: 1775965731816 */
+
+/* spacing: 1775965741162 */
+
+/* radius: 1775965744339 */
