@@ -588,3 +588,6 @@ html { scroll-behavior: smooth; }
 }
 
 /* opacity: 1776061918397 */
+
+/* --- Card hover glow --- */
+.glass-card:hover { border-color: rgba(53, 208, 127, 0.35); }
