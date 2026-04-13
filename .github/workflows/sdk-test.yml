@@ -9,7 +9,6 @@ jobs:
   install-and-verify:
     name: Install & Verify (Node ${{ matrix.node-version }})
     runs-on: ubuntu-latest
-    continue-on-error: true
     strategy:
       fail-fast: false
       matrix:
@@ -28,12 +27,10 @@ jobs:
       - name: Install celo-vote-battle-sdk from npm
         working-directory: sdk-test
         run: npm install celo-vote-battle-sdk
-        continue-on-error: true
 
       - name: Verify package is resolvable
         working-directory: sdk-test
         run: node -e "const path = require.resolve('celo-vote-battle-sdk'); console.log('Resolved:', path);"
-        continue-on-error: true
 
       - name: Check module exports
         working-directory: sdk-test
@@ -47,7 +44,6 @@ jobs:
               console.log('Warning: no exports found');
             }
           "
-        continue-on-error: true
 
       - name: Run basic import test
         working-directory: sdk-test
@@ -62,7 +58,6 @@ jobs:
               process.exit(1);
             }
           "
-        continue-on-error: true
 
       - name: Validate package.json metadata
         working-directory: sdk-test
@@ -75,12 +70,10 @@ jobs:
             console.log('Version:', pkg.version);
             console.log('License:', pkg.license || 'not specified');
           "
-        continue-on-error: true
 
   stress-test:
     name: Stress Test Run ${{ matrix.run }}
     runs-on: ubuntu-latest
-    continue-on-error: true
     strategy:
       fail-fast: false
       matrix:
@@ -97,9 +90,7 @@ jobs:
           npm init -y
           npm install celo-vote-battle-sdk
           node -e "const s = require('celo-vote-battle-sdk'); console.log('Run ${{ matrix.run }}: OK, exports:', Object.keys(s).length);"
-        continue-on-error: true
 
       - name: Verify integrity
         working-directory: workspace
         run: npm ls celo-vote-battle-sdk
-        continue-on-error: true
