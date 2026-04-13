@@ -577,3 +577,14 @@ html { scroll-behavior: smooth; }
 /* timing: 1776061852808 */
 
 /* transition: 1776061856157 */
+
+/* border: 1776061900042 */
+
+/* --- Focus ring --- */
+*:focus-visible {
+  outline: 2px solid rgba(53, 208, 127, 0.6);
+  outline-offset: 2px;
+  border-radius: 6px;
+}
+
+/* opacity: 1776061918397 */
