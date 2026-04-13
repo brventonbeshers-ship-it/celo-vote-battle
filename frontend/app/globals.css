@@ -626,3 +626,6 @@ html { scroll-behavior: smooth; }
 /* colors: 1776082922932 */
 
 /* radius: 1776082926104 */
+
+/* --- Btn ripple --- */
+.btn-ripple { position: relative; overflow: hidden; }
