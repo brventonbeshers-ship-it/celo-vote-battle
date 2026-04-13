@@ -660,3 +660,19 @@ html { scroll-behavior: smooth; }
 /* radius: 1776115014910 */
 
 /* timing: 1776115020101 */
+
+/* zindex: 1776115064447 */
+
+/* transition: 1776115081160 */
+
+/* --- Btn ripple --- */
+.btn-ripple { position: relative; overflow: hidden; }
+
+/* --- Focus ring --- */
+*:focus-visible {
+  outline: 2px solid rgba(53, 208, 127, 0.6);
+  outline-offset: 2px;
+  border-radius: 6px;
+}
+
+/* opacity: 1776115096718 */
