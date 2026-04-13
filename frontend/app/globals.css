@@ -596,3 +596,6 @@ html { scroll-behavior: smooth; }
 .btn-ripple { position: relative; overflow: hidden; }
 
 /* shadow: 1776062007448 */
+
+/* --- Selection --- */
+::selection { background: rgba(53, 208, 127, 0.25); color: #fff; }
