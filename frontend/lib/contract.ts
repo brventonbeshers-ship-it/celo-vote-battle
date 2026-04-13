@@ -1,4 +1,23 @@
-import { CONTRACT_ADDRESS } from "./config";
+import { CONTRACT_ADDRESS, CELO_RPC } from "./config";
+import {
+  VoteBattleClient,
+  VOTE_BATTLE_ABI as SDK_ABI,
+  POLLS as SDK_POLLS,
+} from "celo-vote-battle-sdk";
+export type { PollResults, VoterStats } from "celo-vote-battle-sdk";
+
+const client = new VoteBattleClient({
+  contractAddress: CONTRACT_ADDRESS,
+  rpcUrl: CELO_RPC,
+});
+
+export const getPollResults = (pollId: number) => client.getPollResults(pollId);
+export const getAllPollResults = () => client.getAllPollResults();
+export const getVoterStats = (address: string) => client.getVoterStats(address);
+export const getVoterPollStats = (address: string, pollId: number) =>
+  client.getVoterPollStats(address, pollId);
+export const getPolls = () => client.getPolls();
+export { SDK_POLLS };
 
 export const VOTE_BATTLE_ABI = [
   {
