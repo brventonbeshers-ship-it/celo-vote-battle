@@ -1,6 +1,7 @@
 export const CONTRACT_ADDRESS = process.env.NEXT_PUBLIC_CONTRACT_ADDRESS || "0xa4a58f507359cA596306701837F5c48c3E9BF864";
 export const CELO_RPC = "https://forno.celo.org";
 export const CELO_CHAIN_ID = 42220;
+export const MINIPAY_FEE_CURRENCY = "0x765DE816845861e75A25fCA122bb6898B8B1282a" as const;
 
 export function shortenAddress(addr: string, head = 6, tail = 4): string {
   if (!addr) return "";

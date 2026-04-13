@@ -3,10 +3,11 @@
 import { useState, useEffect } from "react";
 import { useAccount, useWriteContract, useWaitForTransactionReceipt } from "wagmi";
 import { contractConfig } from "@/lib/contract";
-import { calcPercent, formatNumber } from "@/lib/config";
+import { calcPercent, formatNumber, MINIPAY_FEE_CURRENCY } from "@/lib/config";
 import { Poll } from "@/lib/polls";
 import { createPublicClient, http } from "viem";
 import { celo } from "viem/chains";
+import { useMiniPay } from "@/hooks/useMiniPay";
 
 const publicClient = createPublicClient({ chain: celo, transport: http() });
 
@@ -16,6 +17,7 @@ interface Props {
 
 export default function PollCard({ poll }: Props) {
   const { address, isConnected } = useAccount();
+  const { isMiniPay } = useMiniPay();
   const [votesA, setVotesA] = useState(0);
   const [votesB, setVotesB] = useState(0);
   const [voting, setVoting] = useState<1 | 2 | null>(null);
@@ -57,6 +59,7 @@ export default function PollCard({ poll }: Props) {
       ...contractConfig,
       functionName: "vote",
       args: [BigInt(poll.id), BigInt(option)],
+      ...(isMiniPay ? { feeCurrency: MINIPAY_FEE_CURRENCY } : {}),
     });
   }
 
