@@ -798,3 +798,6 @@ html { scroll-behavior: smooth; }
 /* font: 1776185164361 */
 
 /* zindex: 1776185168535 */
+
+/* --- Btn ripple --- */
+.btn-ripple { position: relative; overflow: hidden; }
