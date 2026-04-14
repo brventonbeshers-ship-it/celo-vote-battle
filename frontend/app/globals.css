@@ -736,3 +736,18 @@ html { scroll-behavior: smooth; }
 /* spacing: 1776169699479 */
 
 /* font: 1776169702913 */
+
+/* --- Selection --- */
+::selection { background: rgba(53, 208, 127, 0.25); color: #fff; }
+
+/* border: 1776169758230 */
+
+/* transition: 1776169763613 */
+
+/* zindex: 1776169769017 */
+
+/* colors: 1776169772397 */
+
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: rgba(53, 208, 127, 0.3); border-radius: 3px; }
