@@ -792,3 +792,12 @@ html { scroll-behavior: smooth; }
 /* timing: 1776185119056 */
 
 /* transition: 1776185121240 */
+
+/* border: 1776185161191 */
+
+/* font: 1776185164361 */
+
+/* zindex: 1776185168535 */
+
+/* --- Btn ripple --- */
+.btn-ripple { position: relative; overflow: hidden; }
