@@ -923,3 +923,10 @@ html { scroll-behavior: smooth; }
 /* transition: 1776255555000 */
 
 /* opacity: 1776255568537 */
+
+/* --- Btn ripple --- */
+.btn-ripple { position: relative; overflow: hidden; }
+
+/* font: 1776268550102 */
+
+/* transition: 1776268557492 */
