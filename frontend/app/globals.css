@@ -899,3 +899,6 @@ html { scroll-behavior: smooth; }
 .glass-card:hover { border-color: rgba(53, 208, 127, 0.35); }
 
 /* border: 1776255388696 */
+
+/* --- Btn ripple --- */
+.btn-ripple { position: relative; overflow: hidden; }
