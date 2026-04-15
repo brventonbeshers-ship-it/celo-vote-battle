@@ -823,3 +823,15 @@ html { scroll-behavior: smooth; }
 
 /* --- Btn ripple --- */
 .btn-ripple { position: relative; overflow: hidden; }
+
+/* shadow: 1776214265383 */
+
+/* --- Selection --- */
+::selection { background: rgba(53, 208, 127, 0.25); color: #fff; }
+
+/* --- Card hover glow --- */
+.glass-card:hover { border-color: rgba(53, 208, 127, 0.35); }
+
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: rgba(53, 208, 127, 0.3); border-radius: 3px; }
