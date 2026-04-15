@@ -883,3 +883,10 @@ html { scroll-behavior: smooth; }
 /* opacity: 1776246863154 */
 
 /* spacing: 1776246915632 */
+
+/* font: 1776255303093 */
+
+/* --- Selection --- */
+::selection { background: rgba(53, 208, 127, 0.25); color: #fff; }
+
+/* zindex: 1776255325156 */
