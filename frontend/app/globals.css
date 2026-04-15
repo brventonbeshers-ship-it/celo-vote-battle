@@ -864,3 +864,14 @@ html { scroll-behavior: smooth; }
 .btn-ripple { position: relative; overflow: hidden; }
 
 /* transition: 1776246741617 */
+
+/* --- Card hover glow --- */
+.glass-card:hover { border-color: rgba(53, 208, 127, 0.35); }
+
+/* radius: 1776246791810 */
+
+/* timing: 1776246793994 */
+
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: rgba(53, 208, 127, 0.3); border-radius: 3px; }
