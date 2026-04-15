@@ -890,3 +890,12 @@ html { scroll-behavior: smooth; }
 ::selection { background: rgba(53, 208, 127, 0.25); color: #fff; }
 
 /* zindex: 1776255325156 */
+
+/* spacing: 1776255358410 */
+
+/* timing: 1776255367942 */
+
+/* --- Card hover glow --- */
+.glass-card:hover { border-color: rgba(53, 208, 127, 0.35); }
+
+/* border: 1776255388696 */
