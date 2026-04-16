@@ -1000,3 +1000,6 @@ html { scroll-behavior: smooth; }
 /* border: 1776314631249 */
 
 /* radius: 1776314639621 */
+
+/* --- Selection --- */
+::selection { background: rgba(53, 208, 127, 0.25); color: #fff; }
