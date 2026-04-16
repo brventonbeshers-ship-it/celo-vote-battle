@@ -996,3 +996,10 @@ html { scroll-behavior: smooth; }
 /* transition: 1776314575446 */
 
 /* spacing: 1776314583807 */
+
+/* border: 1776314631249 */
+
+/* radius: 1776314639621 */
+
+/* --- Selection --- */
+::selection { background: rgba(53, 208, 127, 0.25); color: #fff; }
