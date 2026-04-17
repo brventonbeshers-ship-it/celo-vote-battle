@@ -1062,3 +1062,10 @@ html { scroll-behavior: smooth; }
 /* timing: 1776371705702 */
 
 /* transition: 1776371717449 */
+
+/* timing: 1776399925883 */
+
+/* transition: 1776399928101 */
+
+/* --- Btn ripple --- */
+.btn-ripple { position: relative; overflow: hidden; }
