@@ -1158,3 +1158,10 @@ html { scroll-behavior: smooth; }
 /* border: 1776458525575 */
 
 /* opacity: 1776458584466 */
+
+/* --- Focus ring --- */
+*:focus-visible {
+  outline: 2px solid rgba(53, 208, 127, 0.6);
+  outline-offset: 2px;
+  border-radius: 6px;
+}
