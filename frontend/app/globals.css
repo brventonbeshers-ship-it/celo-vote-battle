@@ -1129,3 +1129,11 @@ html { scroll-behavior: smooth; }
 /* spacing: 1776458257957 */
 
 /* shadow: 1776458308392 */
+
+/* --- Btn ripple --- */
+.btn-ripple { position: relative; overflow: hidden; }
+
+/* --- Selection --- */
+::selection { background: rgba(53, 208, 127, 0.25); color: #fff; }
+
+/* radius: 1776458365424 */
