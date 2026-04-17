@@ -1085,3 +1085,15 @@ html { scroll-behavior: smooth; }
 /* colors: 1776400110273 */
 
 /* zindex: 1776400126990 */
+
+/* --- Selection --- */
+::selection { background: rgba(53, 208, 127, 0.25); color: #fff; }
+
+/* zindex: 1776430688129 */
+
+/* timing: 1776430692311 */
+
+/* --- Card hover glow --- */
+.glass-card:hover { border-color: rgba(53, 208, 127, 0.35); }
+
+/* colors: 1776430703874 */
