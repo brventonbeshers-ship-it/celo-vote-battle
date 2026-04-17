@@ -21,8 +21,9 @@ export default function PollCard({ poll }: Props) {
   const [votesA, setVotesA] = useState(0);
   const [votesB, setVotesB] = useState(0);
   const [voting, setVoting] = useState<1 | 2 | null>(null);
+  const [txError, setTxError] = useState<string | null>(null);
 
-  const { writeContract, data: hash, isPending } = useWriteContract();
+  const { writeContractAsync, data: hash, isPending } = useWriteContract();
   const { isLoading: isConfirming, isSuccess } = useWaitForTransactionReceipt({ hash });
 
   const total = votesA + votesB;
@@ -52,15 +53,23 @@ export default function PollCard({ poll }: Props) {
     } catch {}
   }
 
-  function handleVote(option: 1 | 2) {
-    if (!isConnected) return;
+  async function handleVote(option: 1 | 2) {
+    if (!isConnected || !address || busy) return;
     setVoting(option);
-    writeContract({
-      ...contractConfig,
-      functionName: "vote",
-      args: [BigInt(poll.id), BigInt(option)],
-      ...(isMiniPay ? { feeCurrency: MINIPAY_FEE_CURRENCY } : {}),
-    });
+    setTxError(null);
+    try {
+      await writeContractAsync({
+        ...contractConfig,
+        account: address,
+        chainId: celo.id,
+        functionName: "vote",
+        args: [BigInt(poll.id), BigInt(option)],
+        ...(isMiniPay ? { feeCurrency: MINIPAY_FEE_CURRENCY } : {}),
+      } as Parameters<typeof writeContractAsync>[0]);
+    } catch (error) {
+      setVoting(null);
+      setTxError(error instanceof Error ? error.message.slice(0, 180) : "Transaction rejected or failed.");
+    }
   }
 
   const busy = isPending || isConfirming;
@@ -114,6 +123,7 @@ export default function PollCard({ poll }: Props) {
           {busy && voting === 2 ? "Voting..." : poll.optionB}
         </button>
       </div>
+      {txError && <p className="mt-3 text-center text-sm text-red-400">{txError}</p>}
     </div>
   );
 }
