@@ -1,11 +1,11 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { useAccount, useWriteContract, useWaitForTransactionReceipt } from "wagmi";
+import { useAccount, useSendTransaction, useWaitForTransactionReceipt } from "wagmi";
 import { contractConfig } from "@/lib/contract";
 import { calcPercent, formatNumber, MINIPAY_FEE_CURRENCY } from "@/lib/config";
 import { Poll } from "@/lib/polls";
-import { createPublicClient, http } from "viem";
+import { createPublicClient, encodeFunctionData, http } from "viem";
 import { celo } from "viem/chains";
 import { useMiniPay } from "@/hooks/useMiniPay";
 
@@ -23,7 +23,7 @@ export default function PollCard({ poll }: Props) {
   const [voting, setVoting] = useState<1 | 2 | null>(null);
   const [txError, setTxError] = useState<string | null>(null);
 
-  const { writeContractAsync, data: hash, isPending } = useWriteContract();
+  const { sendTransactionAsync, data: hash, isPending } = useSendTransaction();
   const { isLoading: isConfirming, isSuccess } = useWaitForTransactionReceipt({ hash });
 
   const total = votesA + votesB;
@@ -58,14 +58,18 @@ export default function PollCard({ poll }: Props) {
     setVoting(option);
     setTxError(null);
     try {
-      await writeContractAsync({
-        ...contractConfig,
-        account: address,
-        chainId: celo.id,
+      const data = encodeFunctionData({
+        abi: contractConfig.abi,
         functionName: "vote",
         args: [BigInt(poll.id), BigInt(option)],
+      });
+
+      await sendTransactionAsync({
+        account: address,
+        to: contractConfig.address,
+        data,
         ...(isMiniPay ? { feeCurrency: MINIPAY_FEE_CURRENCY } : {}),
-      } as Parameters<typeof writeContractAsync>[0]);
+      } as Parameters<typeof sendTransactionAsync>[0]);
     } catch (error) {
       setVoting(null);
       setTxError(error instanceof Error ? error.message.slice(0, 180) : "Transaction rejected or failed.");
