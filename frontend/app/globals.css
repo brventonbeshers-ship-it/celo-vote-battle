@@ -1115,3 +1115,10 @@ html { scroll-behavior: smooth; }
 /* spacing: 1776430840579 */
 
 /* border: 1776430845748 */
+
+/* --- Focus ring --- */
+*:focus-visible {
+  outline: 2px solid rgba(53, 208, 127, 0.6);
+  outline-offset: 2px;
+  border-radius: 6px;
+}
