@@ -1137,3 +1137,15 @@ html { scroll-behavior: smooth; }
 ::selection { background: rgba(53, 208, 127, 0.25); color: #fff; }
 
 /* radius: 1776458365424 */
+
+/* colors: 1776458417627 */
+
+/* zindex: 1776458423973 */
+
+/* timing: 1776458428138 */
+
+/* font: 1776458431307 */
+
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: rgba(53, 208, 127, 0.3); border-radius: 3px; }
