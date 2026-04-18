@@ -1227,3 +1227,7 @@ html { scroll-behavior: smooth; }
 /* zindex: 1776492145735 */
 
 /* timing: 1776492180376 */
+
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: rgba(53, 208, 127, 0.3); border-radius: 3px; }
