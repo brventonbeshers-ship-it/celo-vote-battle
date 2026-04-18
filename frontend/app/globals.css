@@ -1275,3 +1275,13 @@ html { scroll-behavior: smooth; }
 /* colors: 1776516756929 */
 
 /* opacity: 1776516766676 */
+
+/* --- Btn ripple --- */
+.btn-ripple { position: relative; overflow: hidden; }
+
+/* --- Focus ring --- */
+*:focus-visible {
+  outline: 2px solid rgba(53, 208, 127, 0.6);
+  outline-offset: 2px;
+  border-radius: 6px;
+}
