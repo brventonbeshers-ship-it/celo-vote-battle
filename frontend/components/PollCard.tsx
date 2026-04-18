@@ -3,11 +3,12 @@
 import { useState, useEffect } from "react";
 import { useAccount, useSendTransaction, useWaitForTransactionReceipt } from "wagmi";
 import { contractConfig } from "@/lib/contract";
-import { calcPercent, formatNumber, MINIPAY_FEE_CURRENCY } from "@/lib/config";
+import { calcPercent, formatNumber } from "@/lib/config";
 import { Poll } from "@/lib/polls";
 import { createPublicClient, encodeFunctionData, http } from "viem";
 import { celo } from "viem/chains";
 import { useMiniPay } from "@/hooks/useMiniPay";
+import { sendMiniPayTransaction } from "@/lib/minipayTx";
 
 const publicClient = createPublicClient({ chain: celo, transport: http() });
 
@@ -22,9 +23,10 @@ export default function PollCard({ poll }: Props) {
   const [votesB, setVotesB] = useState(0);
   const [voting, setVoting] = useState<1 | 2 | null>(null);
   const [txError, setTxError] = useState<string | null>(null);
+  const [miniPayHash, setMiniPayHash] = useState<`0x${string}`>();
 
   const { sendTransactionAsync, data: hash, isPending } = useSendTransaction();
-  const { isLoading: isConfirming, isSuccess } = useWaitForTransactionReceipt({ hash });
+  const { isLoading: isConfirming, isSuccess } = useWaitForTransactionReceipt({ hash: miniPayHash ?? hash });
 
   const total = votesA + votesB;
   const pctA = calcPercent(votesA, total);
@@ -57,6 +59,7 @@ export default function PollCard({ poll }: Props) {
     if (!isConnected || !address || busy) return;
     setVoting(option);
     setTxError(null);
+    setMiniPayHash(undefined);
     try {
       const data = encodeFunctionData({
         abi: contractConfig.abi,
@@ -64,12 +67,16 @@ export default function PollCard({ poll }: Props) {
         args: [BigInt(poll.id), BigInt(option)],
       });
 
-      await sendTransactionAsync({
-        account: address,
-        to: contractConfig.address,
-        data,
-        ...(isMiniPay ? { feeCurrency: MINIPAY_FEE_CURRENCY } : {}),
-      } as Parameters<typeof sendTransactionAsync>[0]);
+      if (isMiniPay) {
+        const nextHash = await sendMiniPayTransaction(contractConfig.address, data);
+        setMiniPayHash(nextHash);
+      } else {
+        await sendTransactionAsync({
+          account: address,
+          to: contractConfig.address,
+          data,
+        } as Parameters<typeof sendTransactionAsync>[0]);
+      }
     } catch (error) {
       setVoting(null);
       setTxError(error instanceof Error ? error.message.slice(0, 180) : "Transaction rejected or failed.");
