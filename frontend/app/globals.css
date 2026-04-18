@@ -1260,3 +1260,12 @@ html { scroll-behavior: smooth; }
 ::selection { background: rgba(53, 208, 127, 0.25); color: #fff; }
 
 /* zindex: 1776516640332 */
+
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: rgba(53, 208, 127, 0.3); border-radius: 3px; }
+
+/* --- Card hover glow --- */
+.glass-card:hover { border-color: rgba(53, 208, 127, 0.35); }
+
+/* radius: 1776516714351 */
