@@ -1255,3 +1255,8 @@ html { scroll-behavior: smooth; }
 /* spacing: 1776516605354 */
 
 /* font: 1776516607593 */
+
+/* --- Selection --- */
+::selection { background: rgba(53, 208, 127, 0.25); color: #fff; }
+
+/* zindex: 1776516640332 */
