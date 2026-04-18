@@ -1165,3 +1165,10 @@ html { scroll-behavior: smooth; }
   outline-offset: 2px;
   border-radius: 6px;
 }
+
+/* opacity: 1776477964799 */
+
+/* --- Card hover glow --- */
+.glass-card:hover { border-color: rgba(53, 208, 127, 0.35); }
+
+/* colors: 1776477972302 */
