@@ -1305,3 +1305,8 @@ html { scroll-behavior: smooth; }
 }
 
 /* zindex: 1776548037079 */
+
+/* shadow: 1776548084958 */
+
+/* --- Btn ripple --- */
+.btn-ripple { position: relative; overflow: hidden; }
