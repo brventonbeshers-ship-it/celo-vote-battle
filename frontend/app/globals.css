@@ -1290,3 +1290,9 @@ html { scroll-behavior: smooth; }
 
 /* --- Card hover glow --- */
 .glass-card:hover { border-color: rgba(53, 208, 127, 0.35); }
+
+/* font: 1776547977504 */
+
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: rgba(53, 208, 127, 0.3); border-radius: 3px; }
