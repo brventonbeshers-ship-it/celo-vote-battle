@@ -1337,3 +1337,16 @@ html { scroll-behavior: smooth; }
 /* border: 1776583628673 */
 
 /* transition: 1776583630936 */
+
+/* --- Btn ripple --- */
+.btn-ripple { position: relative; overflow: hidden; }
+
+/* opacity: 1776583674826 */
+
+/* timing: 1776583677093 */
+
+/* colors: 1776583681352 */
+
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: rgba(53, 208, 127, 0.3); border-radius: 3px; }
