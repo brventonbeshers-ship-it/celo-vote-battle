@@ -1411,3 +1411,12 @@ html { scroll-behavior: smooth; }
 /* spacing: 1776642671079 */
 
 /* radius: 1776642673341 */
+
+/* --- Btn ripple --- */
+.btn-ripple { position: relative; overflow: hidden; }
+
+/* --- Card hover glow --- */
+.glass-card:hover { border-color: rgba(53, 208, 127, 0.35); }
+
+/* --- Selection --- */
+::selection { background: rgba(53, 208, 127, 0.25); color: #fff; }
