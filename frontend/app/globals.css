@@ -1365,3 +1365,14 @@ html { scroll-behavior: smooth; }
   outline-offset: 2px;
   border-radius: 6px;
 }
+
+/* spacing: 1776617404253 */
+
+/* --- Card hover glow --- */
+.glass-card:hover { border-color: rgba(53, 208, 127, 0.35); }
+
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: rgba(53, 208, 127, 0.3); border-radius: 3px; }
+
+/* transition: 1776617428708 */
