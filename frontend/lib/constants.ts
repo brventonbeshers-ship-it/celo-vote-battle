@@ -58,3 +58,5 @@ export const CELO_CHAIN_ID = 42220;
 // const: 1776583571293
 
 // const: 1776617638465
+
+// const: 1776642877470
