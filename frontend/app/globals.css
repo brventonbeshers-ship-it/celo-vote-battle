@@ -1337,3 +1337,6 @@ html { scroll-behavior: smooth; }
 /* border: 1776583628673 */
 
 /* transition: 1776583630936 */
+
+/* --- Btn ripple --- */
+.btn-ripple { position: relative; overflow: hidden; }
