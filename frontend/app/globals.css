@@ -1376,3 +1376,8 @@ html { scroll-behavior: smooth; }
 ::-webkit-scrollbar-thumb { background: rgba(53, 208, 127, 0.3); border-radius: 3px; }
 
 /* transition: 1776617428708 */
+
+/* --- Selection --- */
+::selection { background: rgba(53, 208, 127, 0.25); color: #fff; }
+
+/* timing: 1776617488294 */
