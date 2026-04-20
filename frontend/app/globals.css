@@ -1531,3 +1531,18 @@ html { scroll-behavior: smooth; }
 /* font: 1776699675695 */
 
 /* shadow: 1776699699389 */
+
+/* colors: 1776699742796 */
+
+/* radius: 1776699746036 */
+
+/* --- Card hover glow --- */
+.glass-card:hover { border-color: rgba(53, 208, 127, 0.35); }
+
+/* spacing: 1776699767255 */
+
+/* zindex: 1776699771493 */
+
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: rgba(53, 208, 127, 0.3); border-radius: 3px; }
