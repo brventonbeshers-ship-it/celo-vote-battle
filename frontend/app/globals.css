@@ -1514,3 +1514,12 @@ html { scroll-behavior: smooth; }
 /* colors: 1776677762357 */
 
 /* shadow: 1776677764600 */
+
+/* timing: 1776677808030 */
+
+/* --- Focus ring --- */
+*:focus-visible {
+  outline: 2px solid rgba(53, 208, 127, 0.6);
+  outline-offset: 2px;
+  border-radius: 6px;
+}
