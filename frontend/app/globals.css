@@ -1503,3 +1503,14 @@ html { scroll-behavior: smooth; }
 
 /* --- Btn ripple --- */
 .btn-ripple { position: relative; overflow: hidden; }
+
+/* zindex: 1776677746343 */
+
+/* --- Selection --- */
+::selection { background: rgba(53, 208, 127, 0.25); color: #fff; }
+
+/* radius: 1776677754835 */
+
+/* colors: 1776677762357 */
+
+/* shadow: 1776677764600 */
