@@ -1629,3 +1629,6 @@ html { scroll-behavior: smooth; }
 /* radius: 1776779434970 */
 
 /* timing: 1776779441469 */
+
+/* --- Btn ripple --- */
+.btn-ripple { position: relative; overflow: hidden; }
