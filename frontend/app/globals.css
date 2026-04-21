@@ -1665,3 +1665,6 @@ html { scroll-behavior: smooth; }
 .glass-card:hover { border-color: rgba(53, 208, 127, 0.35); }
 
 /* zindex: 1776802744316 */
+
+/* --- Btn ripple --- */
+.btn-ripple { position: relative; overflow: hidden; }
