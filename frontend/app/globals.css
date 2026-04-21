@@ -1582,3 +1582,15 @@ html { scroll-behavior: smooth; }
 }
 
 /* timing: 1776749948523 */
+
+/* transition: 1776749986743 */
+
+/* zindex: 1776749994214 */
+
+/* shadow: 1776749997445 */
+
+/* --- Selection --- */
+::selection { background: rgba(53, 208, 127, 0.25); color: #fff; }
+
+/* --- Card hover glow --- */
+.glass-card:hover { border-color: rgba(53, 208, 127, 0.35); }
