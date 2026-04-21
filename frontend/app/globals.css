@@ -1691,3 +1691,18 @@ html { scroll-behavior: smooth; }
 /* border: 1776815692675 */
 
 /* radius: 1776815708245 */
+
+/* opacity: 1776815735578 */
+
+/* --- Focus ring --- */
+*:focus-visible {
+  outline: 2px solid rgba(53, 208, 127, 0.6);
+  outline-offset: 2px;
+  border-radius: 6px;
+}
+
+/* --- Btn ripple --- */
+.btn-ripple { position: relative; overflow: hidden; }
+
+/* --- Card hover glow --- */
+.glass-card:hover { border-color: rgba(53, 208, 127, 0.35); }
