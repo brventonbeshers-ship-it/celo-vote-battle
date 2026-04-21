@@ -1645,3 +1645,14 @@ html { scroll-behavior: smooth; }
 /* transition: 1776779525138 */
 
 /* shadow: 1776779572451 */
+
+/* font: 1776802670130 */
+
+/* border: 1776802675393 */
+
+/* --- Selection --- */
+::selection { background: rgba(53, 208, 127, 0.25); color: #fff; }
+
+/* spacing: 1776802688115 */
+
+/* timing: 1776802690374 */
