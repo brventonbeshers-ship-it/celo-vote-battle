@@ -1765,3 +1765,6 @@ html { scroll-behavior: smooth; }
 ::selection { background: rgba(53, 208, 127, 0.25); color: #fff; }
 
 /* transition: 1776832791316 */
+
+/* --- Btn ripple --- */
+.btn-ripple { position: relative; overflow: hidden; }
