@@ -1795,3 +1795,9 @@ html { scroll-behavior: smooth; }
 /* radius: 1776861347008 */
 
 /* font: 1776861360812 */
+
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: rgba(53, 208, 127, 0.3); border-radius: 3px; }
+
+/* colors: 1776861411559 */
