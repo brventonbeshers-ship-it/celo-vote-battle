@@ -1760,3 +1760,6 @@ html { scroll-behavior: smooth; }
 }
 
 /* border: 1776832778593 */
+
+/* --- Selection --- */
+::selection { background: rgba(53, 208, 127, 0.25); color: #fff; }
