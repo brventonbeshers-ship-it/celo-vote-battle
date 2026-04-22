@@ -1810,3 +1810,10 @@ html { scroll-behavior: smooth; }
 ::selection { background: rgba(53, 208, 127, 0.25); color: #fff; }
 
 /* timing: 1776874577738 */
+
+/* --- Btn ripple --- */
+.btn-ripple { position: relative; overflow: hidden; }
+
+/* spacing: 1776874634390 */
+
+/* opacity: 1776874644310 */
