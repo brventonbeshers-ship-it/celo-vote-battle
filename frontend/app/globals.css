@@ -1874,3 +1874,10 @@ html { scroll-behavior: smooth; }
 /* colors: 1776888162517 */
 
 /* opacity: 1776888205914 */
+
+/* --- Focus ring --- */
+*:focus-visible {
+  outline: 2px solid rgba(53, 208, 127, 0.6);
+  outline-offset: 2px;
+  border-radius: 6px;
+}
