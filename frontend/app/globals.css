@@ -1817,3 +1817,19 @@ html { scroll-behavior: smooth; }
 /* spacing: 1776874634390 */
 
 /* opacity: 1776874644310 */
+
+/* border: 1776874677483 */
+
+/* --- Focus ring --- */
+*:focus-visible {
+  outline: 2px solid rgba(53, 208, 127, 0.6);
+  outline-offset: 2px;
+  border-radius: 6px;
+}
+
+/* zindex: 1776874702672 */
+
+/* colors: 1776874707918 */
+
+/* --- Card hover glow --- */
+.glass-card:hover { border-color: rgba(53, 208, 127, 0.35); }
