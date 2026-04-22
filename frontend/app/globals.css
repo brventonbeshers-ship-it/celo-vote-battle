@@ -1749,3 +1749,12 @@ html { scroll-behavior: smooth; }
 
 /* --- Btn ripple --- */
 .btn-ripple { position: relative; overflow: hidden; }
+
+/* font: 1776832717131 */
+
+/* --- Focus ring --- */
+*:focus-visible {
+  outline: 2px solid rgba(53, 208, 127, 0.6);
+  outline-offset: 2px;
+  border-radius: 6px;
+}
