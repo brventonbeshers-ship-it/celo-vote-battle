@@ -1858,3 +1858,6 @@ html { scroll-behavior: smooth; }
 .btn-ripple { position: relative; overflow: hidden; }
 
 /* radius: 1776888060408 */
+
+/* --- Card hover glow --- */
+.glass-card:hover { border-color: rgba(53, 208, 127, 0.35); }
