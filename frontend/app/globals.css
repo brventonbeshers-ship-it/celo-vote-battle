@@ -1746,3 +1746,6 @@ html { scroll-behavior: smooth; }
 /* timing: 1776832664591 */
 
 /* zindex: 1776832670078 */
+
+/* --- Btn ripple --- */
+.btn-ripple { position: relative; overflow: hidden; }
