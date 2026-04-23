@@ -1940,3 +1940,10 @@ html { scroll-behavior: smooth; }
 /* shadow: 1776960585746 */
 
 /* opacity: 1776960629454 */
+
+/* timing: 1776960707544 */
+
+/* --- Selection --- */
+::selection { background: rgba(53, 208, 127, 0.25); color: #fff; }
+
+/* spacing: 1776960717283 */
