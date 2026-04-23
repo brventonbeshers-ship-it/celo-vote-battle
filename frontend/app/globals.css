@@ -1927,3 +1927,14 @@ html { scroll-behavior: smooth; }
 /* font: 1776937455078 */
 
 /* transition: 1776960522412 */
+
+/* border: 1776960563459 */
+
+/* --- Card hover glow --- */
+.glass-card:hover { border-color: rgba(53, 208, 127, 0.35); }
+
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: rgba(53, 208, 127, 0.3); border-radius: 3px; }
+
+/* shadow: 1776960585746 */
