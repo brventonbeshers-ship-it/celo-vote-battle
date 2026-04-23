@@ -1942,3 +1942,6 @@ html { scroll-behavior: smooth; }
 /* opacity: 1776960629454 */
 
 /* timing: 1776960707544 */
+
+/* --- Selection --- */
+::selection { background: rgba(53, 208, 127, 0.25); color: #fff; }
