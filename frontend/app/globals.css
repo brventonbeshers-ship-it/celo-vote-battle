@@ -1968,3 +1968,12 @@ html { scroll-behavior: smooth; }
 /* transition: 1776999830742 */
 
 /* colors: 1776999835005 */
+
+/* radius: 1776999866291 */
+
+/* timing: 1776999870530 */
+
+/* --- Btn ripple --- */
+.btn-ripple { position: relative; overflow: hidden; }
+
+/* spacing: 1776999888509 */
