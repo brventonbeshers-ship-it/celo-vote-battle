@@ -2007,3 +2007,6 @@ html { scroll-behavior: smooth; }
 /* shadow: 1777023299980 */
 
 /* opacity: 1777023313228 */
+
+/* --- Selection --- */
+::selection { background: rgba(53, 208, 127, 0.25); color: #fff; }
