@@ -2063,3 +2063,6 @@ html { scroll-behavior: smooth; }
 /* font: 1777064789866 */
 
 /* radius: 1777064792145 */
+
+/* --- Btn ripple --- */
+.btn-ripple { position: relative; overflow: hidden; }
