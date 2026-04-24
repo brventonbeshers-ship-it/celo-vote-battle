@@ -2047,3 +2047,10 @@ html { scroll-behavior: smooth; }
 /* font: 1777035599781 */
 
 /* zindex: 1777035666631 */
+
+/* --- Btn ripple --- */
+.btn-ripple { position: relative; overflow: hidden; }
+
+/* timing: 1777035709700 */
+
+/* transition: 1777035712950 */
