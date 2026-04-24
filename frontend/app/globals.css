@@ -1972,3 +1972,6 @@ html { scroll-behavior: smooth; }
 /* radius: 1776999866291 */
 
 /* timing: 1776999870530 */
+
+/* --- Btn ripple --- */
+.btn-ripple { position: relative; overflow: hidden; }
