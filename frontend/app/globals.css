@@ -2115,3 +2115,12 @@ html { scroll-behavior: smooth; }
 
 /* --- Selection --- */
 ::selection { background: rgba(53, 208, 127, 0.25); color: #fff; }
+
+/* border: 1777101735160 */
+
+/* --- Card hover glow --- */
+.glass-card:hover { border-color: rgba(53, 208, 127, 0.35); }
+
+/* colors: 1777101749161 */
+
+/* zindex: 1777101757656 */
