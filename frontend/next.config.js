@@ -124,3 +124,5 @@ module.exports = nextConfig;
 // next: 1777035654884
 
 // next: 1777064920581
+
+// next: 1777101587857
