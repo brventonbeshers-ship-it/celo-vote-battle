@@ -2171,3 +2171,6 @@ html { scroll-behavior: smooth; }
 /* radius: 1777167669685 */
 
 /* border: 1777167674924 */
+
+/* --- Card hover glow --- */
+.glass-card:hover { border-color: rgba(53, 208, 127, 0.35); }
