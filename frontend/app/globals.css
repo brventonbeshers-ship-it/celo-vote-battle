@@ -2199,3 +2199,8 @@ html { scroll-behavior: smooth; }
 /* transition: 1777182481659 */
 
 /* shadow: 1777182521368 */
+
+/* border: 1777192572492 */
+
+/* --- Card hover glow --- */
+.glass-card:hover { border-color: rgba(53, 208, 127, 0.35); }
