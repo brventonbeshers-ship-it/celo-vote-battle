@@ -2233,3 +2233,6 @@ html { scroll-behavior: smooth; }
 /* opacity: 1777235763197 */
 
 /* radius: 1777235766435 */
+
+/* --- Selection --- */
+::selection { background: rgba(53, 208, 127, 0.25); color: #fff; }
