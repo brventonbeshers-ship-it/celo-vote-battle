@@ -2210,3 +2210,7 @@ html { scroll-behavior: smooth; }
 /* shadow: 1777192805884 */
 
 /* zindex: 1777192810124 */
+
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: rgba(53, 208, 127, 0.3); border-radius: 3px; }
