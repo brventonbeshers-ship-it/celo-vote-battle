@@ -2236,3 +2236,12 @@ html { scroll-behavior: smooth; }
 
 /* --- Selection --- */
 ::selection { background: rgba(53, 208, 127, 0.25); color: #fff; }
+
+/* zindex: 1777235912091 */
+
+/* --- Focus ring --- */
+*:focus-visible {
+  outline: 2px solid rgba(53, 208, 127, 0.6);
+  outline-offset: 2px;
+  border-radius: 6px;
+}
