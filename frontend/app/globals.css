@@ -2255,3 +2255,8 @@ html { scroll-behavior: smooth; }
 /* colors: 1777264270320 */
 
 /* zindex: 1777264324828 */
+
+/* transition: 1777264356066 */
+
+/* --- Btn ripple --- */
+.btn-ripple { position: relative; overflow: hidden; }
