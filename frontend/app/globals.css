@@ -2350,3 +2350,6 @@ html { scroll-behavior: smooth; }
 .glass-card:hover { border-color: rgba(53, 208, 127, 0.35); }
 
 /* font: 1777585197704 */
+
+/* --- Selection --- */
+::selection { background: rgba(53, 208, 127, 0.25); color: #fff; }
