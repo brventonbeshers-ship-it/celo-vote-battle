@@ -274,3 +274,5 @@ export default function PollCard({ poll }: Props) {
 // pollcard: 1777585206217
 
 // pollcard: 1777611618110
+
+// pollcard: 1777654924342
