@@ -2431,3 +2431,9 @@ html { scroll-behavior: smooth; }
 /* opacity: 1777718269550 */
 
 /* transition: 1777718312791 */
+
+/* font: 1777718355320 */
+
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: rgba(53, 208, 127, 0.3); border-radius: 3px; }
