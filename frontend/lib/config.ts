@@ -150,3 +150,5 @@ export function calcPercent(votes: number, total: number): number {
 // cfg: 1777611654317
 
 // cfg: 1777655151236
+
+// cfg: 1777718446754
