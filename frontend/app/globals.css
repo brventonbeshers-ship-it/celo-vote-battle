@@ -2418,3 +2418,10 @@ html { scroll-behavior: smooth; }
 /* timing: 1777718170294 */
 
 /* zindex: 1777718207245 */
+
+/* --- Focus ring --- */
+*:focus-visible {
+  outline: 2px solid rgba(53, 208, 127, 0.6);
+  outline-offset: 2px;
+  border-radius: 6px;
+}
