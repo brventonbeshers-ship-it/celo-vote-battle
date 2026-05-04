@@ -123,3 +123,5 @@ export default function StatsBar({ totalVotes, totalPolls }: { totalVotes: numbe
 // statsbar: 1777754707529
 
 // statsbar: 1777796690182
+
+// statsbar: 1777878810414
