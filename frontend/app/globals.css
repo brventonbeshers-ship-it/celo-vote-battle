@@ -2505,3 +2505,6 @@ html { scroll-behavior: smooth; }
 }
 
 /* timing: 1778858213416 */
+
+/* --- Selection --- */
+::selection { background: rgba(53, 208, 127, 0.25); color: #fff; }
